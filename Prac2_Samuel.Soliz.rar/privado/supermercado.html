@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SUPERMERCADO</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo1.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+	<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+ 	<script type="text/javascript" src="js/val_supermercado.js"></script>
+</head>
+<body>
+<header>
+		<nav>
+			<ul id="menu">
+				<li><a href="index.html">INICIO</a>  </li>
+				<li><a href="#">PARAMETROS</a>
+					<ul>
+						<li><a href="supermercado.html">Supermercado</a></li>
+						<li><a href="compras.html">Compras</a></li>
+						<li><a href="detallecompras.html">Detalle compras</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="#">SUPERMERCADO
+				</a>
+				<ul>
+					<li><a href="productos.html">Productos</a></li>
+					<li><a href="clientes.html">Clientes</a></li>
+					<li><a href="empleados.html">Empleados</a></li>
+				</ul>
+			</li>
+			<li><a href="#">CONTACTO</a></li>
+		</ul>			
+	</nav>
+</header>
+
+<section id="columna">
+	<h2>SUPERMERCADO</h2>
+	<div id="subtitulo1"></div>
+	<form name="form5" action="#" method="post" enctype="multipart/form-data">
+		NOMBRE: 
+		<input type="text" name="nombre_Super" placeholder="Nombre:">
+		EMAIL: 
+		<input type="email" name="correo_Super" placeholder="Correo electronico:">
+		<form enctype="multipart/form-data" action="uploader.php" method="POST">
+	    LOGO
+        <input name="uploadedfile" type="file" />
+		<input type="hidden" name="formulario" value="Supermercado">
+		<input type="button" name="boton" value="ENVIAR" class="boton" onclick="validar()">
+		<input type="reset" name="boton" value="CANCELAR" class="boton" onclick="validar()">
+		DATO OBLIGATORIO(*)
+	    
+	</form>
+</section>
+</body>
+<body background="fondo1.jpg"></body>
+</html>
